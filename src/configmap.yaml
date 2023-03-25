@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {name}-config
+data:
+  config: |
+{re.sub('^', '    ', configure, flags=re.M)}
